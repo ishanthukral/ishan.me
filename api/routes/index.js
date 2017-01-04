@@ -52,4 +52,23 @@ routes.get('/recentPhotos', function (req, res) {
   });
 });
 
+
+/** Recommended Articles */
+
+routes.get('/recommendedArticles', function (req, res) {
+  request({
+    url: 'https://getpocket.com/v3/get',
+    qs: { access_token: process.env.POCKET_ACCESSTOKEN,
+          consumer_key: process.env.POCKET_CONSUMERKEY,
+          favorite: 1 },
+    method: 'GET'
+  }, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.status(200).send(body);
+    } else {
+      res.status(500).send('Could not find data');
+    }
+  });
+})
+
 module.exports = routes;
