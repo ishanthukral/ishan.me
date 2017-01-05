@@ -2,8 +2,9 @@
   "name": "ishan.me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ishanthukral.github.io/ishan.me",
+  "homepage": "http://ishanthukral.github.io/ishan.me/",
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
