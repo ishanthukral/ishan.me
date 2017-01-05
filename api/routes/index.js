@@ -28,7 +28,7 @@ routes.get('/recentTracks', function (req, res) {
     method: 'GET'
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      res.status(200).send(body);
+      res.status(200).json(JSON.parse(body));
     } else {
       res.status(500).send('Could not find data');
     }
@@ -46,7 +46,7 @@ routes.get('/recentPhotos', function (req, res) {
     method: 'GET'
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      res.status(200).send(body);
+      res.status(200).json(JSON.parse(body));
     } else {
       res.status(500).send('Could not find data');
     }
@@ -65,7 +65,7 @@ routes.get('/recommendedArticles', function (req, res) {
     method: 'GET'
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      res.status(200).send(body);
+      res.status(200).json(JSON.parse(body));
     } else {
       res.status(500).send('Could not find data');
     }
@@ -87,7 +87,7 @@ routes.get('/recentTweet', function (req, res) {
     method: 'GET'
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      res.status(200).send(body);
+      res.status(200).json(JSON.parse(body));
     } else {
       res.status(500).send('Could not find data');
     }
@@ -105,7 +105,7 @@ routes.get('/readingList', function (req, res) {
     method: 'GET'
   }, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      res.status(200).send(body);
+      res.status(200).json(JSON.parse(body));
     } else {
       res.status(500).send('Could not find data');
     }
