@@ -16,6 +16,19 @@ routes.get('/aboutme', function (req, res) {
 });
 
 
+/** Apps */
+
+routes.get('/apps', function (req, res) {
+  request.get(apiDataUrl + '/apps.txt', function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+      res.status(200).json(JSON.parse(body));
+    } else {
+      res.status(500).send('Could not find data');
+    }
+  });
+});
+
+
 /** Recent Tracks */
 
 routes.get('/recentTracks', function (req, res) {
