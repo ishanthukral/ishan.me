@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import MyApps from './MyApps';
 import Photos from './Photos';
 import Books from './Books';
+import TweetSong from './TweetSong';
 import Footer from './Footer';
 
 class App extends Component {
@@ -14,9 +15,12 @@ class App extends Component {
         <Col md={8} mdOffset={2}>
           <Row><AboutMe/></Row>
           <Row><MyApps/></Row>
+          <Row>
+            <Books/>
+            <TweetSong/>
+          </Row>
           <Row><Photos/></Row>
         </Col>
-        <Row><Footer/></Row>
       </Grid>
     );
   }

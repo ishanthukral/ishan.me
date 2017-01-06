@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Carousel } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 class Book extends Component {
   constructor(props) {

@@ -8,7 +8,7 @@ class MyApp extends Component {
 
   render() {
     return (
-      <Col md={2} sm={2} xs={3} className="MyApp">
+      <Col md={2} sm={2} xs={4} className="MyApp">
         <Image className="AppIcon" src={ this.props.app.icon } alt={ this.props.app.name } rounded responsive />
         <p className="AppName"> { this.props.app.name } </p>
       </Col>
