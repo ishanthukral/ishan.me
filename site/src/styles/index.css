@@ -2,4 +2,115 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #F5F5F5;
+}
+
+h1, h3 {
+  font-family: 'Lobster', cursive;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 9.0vw;
+}
+
+h3 {
+  font-size: 4.0vw;
+}
+
+
+/** About Me */
+
+.AboutMe {
+  padding-top: 48px;
+  padding-bottom: 8px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.AboutMe p {
+  font-size: 1.8vw;
+}
+
+
+/** My Apps */
+
+.MyApps {
+}
+
+.MyApps .MyApp {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.MyApps .MyApp .AppIcon {
+  border-radius: 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.MyApps .MyApp .AppName {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2vw;
+}
+
+
+/** Photos */
+
+.Photos {
+}
+
+.Photos .Photo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Photos .Photo .PhotoThumbnail {
+
+}
+
+.PhotoPreview {
+  width: 100%;
+}
+
+
+/** Footer */
+
+.Footer {
+  width: 100%;
+  padding: 30px;
+  background-color: #29292C;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+.Footer p {
+  margin: 0;
+}
+
+
+/**  */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 12.0vw;
+  }
+
+  h3 {
+    font-size: 6.0vw;
+  }
+
+  .AboutMe p {
+    font-size: 3.0vw;
+  }
+
+  .MyApps .MyApp .AppIcon {
+    border-radius: 10px;
+  }
+
+  .MyApps .MyApp .AppName {
+    font-size: 2.5vw;
+  }
 }

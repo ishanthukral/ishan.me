@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import { Grid, Row, Col } from 'react-bootstrap';
+
+import AboutMe from './AboutMe';
+import MyApps from './MyApps';
+import Photos from './Photos';
+import Books from './Books';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Hello World</h1>
-      </div>
+      <Grid className="App">
+        <Col md={8} mdOffset={2}>
+          <Row><AboutMe/></Row>
+          <Row><MyApps/></Row>
+          <Row><Photos/></Row>
+        </Col>
+        <Row><Footer/></Row>
+      </Grid>
     );
   }
 }
