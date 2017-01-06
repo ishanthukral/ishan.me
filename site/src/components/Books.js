@@ -12,7 +12,7 @@ class Books extends Component {
 
   componentDidMount() {
     var that = this;
-    request.get('http://localhost:8080/readingList', function (error, response, body) {
+    request.get('https://api.ishan.me/readingList', function (error, response, body) {
       if (!error && response.statusCode === 200) {
         that.setState({books: JSON.parse(body).data});
       }
