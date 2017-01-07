@@ -22,7 +22,7 @@ class Book extends Component {
     return (
       <Image className="BookThumbnail"
            src={ this.props.book.image.original.url }
-           alt={ this.props.book.node } responsive />
+           alt={ this.props.book.node } rounded responsive />
     );
   }
 }
